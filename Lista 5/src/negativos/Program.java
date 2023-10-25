@@ -20,12 +20,12 @@ public class Program{
 		}
 			
 		
-		Integer[] numeros = new Integer[n];
+		int numeros[] = new int[n];
 
 		for(int i=0; i<n; i++){
 			System.out.print("Digite o " + (i+1) + "o numero: ");
 			int num = sc.nextInt();
-			numeros[i] = new Integer(num);// i did'nt find another way to do that; i mean, i didn't get the gave note
+			numeros[i] = num;
 		}
 		sc.close();//fecha canal de leitura
 
