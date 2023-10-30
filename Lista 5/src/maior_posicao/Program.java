@@ -40,7 +40,7 @@ public class Program {
 		}
 		
 		System.out.println("\nMajor number: " + majorNumber);
-		System.out.println("Position major number: " + positionMajorNumber);
+		System.out.println("Position of major number: " + positionMajorNumber);
 
 	}
 }

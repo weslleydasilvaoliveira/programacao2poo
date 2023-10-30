@@ -27,7 +27,7 @@ public class Program {
 
 		sc.close();
 
-		double sumHeights = 0;//sum heights for the average
+		double sumHeights = 0;//sums heights for the average
 		ArrayList<Person>peopleLessSixteen = new ArrayList<>();//Array to save the ones who are less than sixteen
 		
 		for (Person person : people) {
@@ -35,6 +35,7 @@ public class Program {
 			if(person.getAge()<16)
 				peopleLessSixteen.add(person);
 		}
+        
 		double averageHeight = sumHeights / people.size();
 		
 		System.out.printf("\nAverage Height: %.2f\n", averageHeight);
