@@ -7,7 +7,7 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Quantos valores cada vetor ira guradar: ");
+		System.out.print("Quantos valores cada vetor ira guardar: ");
 		int n = sc.nextInt();
 		
 		//asumirei que os valores são do tipo inteiro
