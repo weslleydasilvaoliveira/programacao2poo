@@ -8,21 +8,21 @@ public class Program{
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
-        String sexo = "";
         double altura = 0;
-        
+        char sexo = '\0';
+       
         System.out.print("Quantas pessoas voce vai digitar? ");
         int n = sc.nextInt();
         
         Pessoa[] pessoas = new Pessoa[n];
         
         for(int i=0; i<n; i++){
-            sc.nextLine();
             System.out.print("Altura da " + (i+1) + "a pessoa: ");
             altura = sc.nextDouble();
+            sc.nextLine();
             System.out.print("Sexo da " + (i+1) + "a pessoa: ");
-            sexo = sc.NextLine();
-            sexo = sexo;
+            sexo = sc.next().charAt(0);
+            pessoas[i] = new Pessoa(altura, sexo);
         }
         
         sc.close();
@@ -40,7 +40,7 @@ public class Program{
             if(pessoas[i].getAltura()<menorAltura)
                 menorAltura = pessoas[i].getAltura();
                 
-            if(pessoas[i].getSexo()[0]=='F'){
+            if(pessoas[i].getSexo()=='F'){
                 mediaAlturaMulheres += pessoas[i].getAltura();
                 quantidadeMulheres++;
             }
@@ -53,29 +53,8 @@ public class Program{
         System.out.println("Menor altura: " + menorAltura);
         System.out.println("Maior altura: " + maiorAltura);
         System.out.printf("Media das aluturas das mulheres: %.2f\n", mediaAlturaMulheres);
-        System.out.ptintln("Quantidade de homens: " + quantidadeHomens);
+        System.out.println("Quantidade de homens: " + quantidadeHomens);
     }
 }
 
-public class Pessoa{
-    private String sexo;
-    private double altura;
-    
-    public Pessoa(altura, sexo){
-        this.altura = altura;
-        this.sexo = sexo;
-    }
-    
-    public double getAltura(){
-        return this.altura();
-    }
-    public void setAltura(altura){
-        this.altura = altura;
-    }
-    public String getSexo(){
-        return this.sexo;
-    }
-    public void setSexo(sexo){
-        this.sexo = sexo;
-    }
-}
+

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Program{
     public static void main(String[] args){
-        Loclae.setDefault(Locale.US);
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Quantas pessoas voce vai digitar? ");

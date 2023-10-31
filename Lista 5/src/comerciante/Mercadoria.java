@@ -27,6 +27,6 @@ public class Mercadoria{
 		return this.precoVenda;
 	}
 	public void setPrecoVenda(double precoVenda){
-		this.precoCompra = precoCompra;
+		this.precoVenda = precoVenda;
 	}
 }
