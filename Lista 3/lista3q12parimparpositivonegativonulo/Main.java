@@ -30,7 +30,7 @@ public class Main
 		    else
 		        magnitude = "NEGATIVO";
 		        
-		    System.out.println(flag + " " + magnitude);
+		    System.out.println(flag + magnitude);
 		}
 	}
 }
