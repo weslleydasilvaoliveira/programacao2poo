@@ -19,9 +19,9 @@ public class Main
 		    if(x == 0)
 		        flag = "";
 		    else if(x != 0 && x % 2 == 0)
-		        flag = "PAR";
+		        flag = "PAR ";
 		    else
-		        flag = "IMPAR";
+		        flag = "IMPAR ";
 		        
 		    if(x == 0)
 		        magnitude = "NULO";
