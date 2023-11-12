@@ -11,7 +11,7 @@ public class Programa {
 		System.out.println(fNormal.getNome());
 		System.out.println(fNormal.pagamento());	
 		
-		System.out.println("\nFUNCIONARIOS TERCEIRIZADOS0:");
+		System.out.println("\nFUNCIONARIOS TERCEIRIZADOS:");
 		System.out.println(terceirizado.getNome());
 		System.out.println(terceirizado.pagamento());
 	}
