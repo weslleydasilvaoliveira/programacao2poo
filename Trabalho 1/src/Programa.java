@@ -68,11 +68,6 @@ public class Programa {
 		c1.addPartida(p5);
 		c1.addPartida(p6);
 		
-		t1.setSaldoGols(10);
-		t2.setSaldoGols(50);
-		
-
-		
 		
 		
 		Scanner scanner = new Scanner(System.in);
